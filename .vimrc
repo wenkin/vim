@@ -26,6 +26,11 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'vim-scripts/SrcExpl'
+Bundle 'oinksoft/proj.vim'
+Bundle 'w0ng/vim-hybrid'
+Bundle 'wannesm/wmgraphviz.vim'
+
+
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -36,34 +41,34 @@ Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
 
-#recommanded bundles from beiyuu.com
-#相较于Command-T等查找文件的插件，ctrlp.vim最大的好处在于没有依赖，干净利落
+"recommanded bundles from beiyuu.com
+"相较于Command-T等查找文件的插件，ctrlp.vim最大的好处在于没有依赖，干净利落
 Bundle 'ctrlp.vim'
-#在输入()，""等需要配对的符号时，自动帮你补全剩余半个
+"在输入()，""等需要配对的符号时，自动帮你补全剩余半个
 Bundle 'AutoClose'
-#神级插件，ZenCoding可以让你以一种神奇而无比爽快的感觉写HTML、CSS
-#Bundle 'ZenCoding.vim'
-#在()、""、甚至HTML标签之间快速跳转；
+"神级插件，ZenCoding可以让你以一种神奇而无比爽快的感觉写HTML、CSS
+"Bundle 'ZenCoding.vim'
+"在()、""、甚至HTML标签之间快速跳转；
 Bundle 'matchit.zip'
-#显示行末的空格；
+"显示行末的空格；
 Bundle 'ShowTrailingWhitespace'
-#JS代码格式化插件；
+"JS代码格式化插件；
 Bundle '_jsbeautify'
-#用全新的方式在文档中高效的移动光标，革命性的突破
+"用全新的方式在文档中高效的移动光标，革命性的突破
 Bundle 'EasyMotion'
-#自动识别文件编码；
+"自动识别文件编码；
 Bundle 'FencView.vim'
-#必不可少，在VIM的编辑窗口树状显示文件目录
-#Bundle 'The-NERD-tree'
-#NERD出品的快速给代码加注释插件，选中，`ctrl+h`即可注释多种语言代码；
+"必不可少，在VIM的编辑窗口树状显示文件目录
+"Bundle 'The-NERD-tree'
+"NERD出品的快速给代码加注释插件，选中，`ctrl+h`即可注释多种语言代码；
 Bundle 'The-NERD-Commenter'
-#解放生产力的神器，简单配置，就可以按照自己的风格快速输入大段代码。
+"解放生产力的神器，简单配置，就可以按照自己的风格快速输入大段代码。
 Bundle 'UltiSnips'
-#让代码更加易于纵向排版，以=或,符号对齐
+"让代码更加易于纵向排版，以=或,符号对齐
 Bundle 'Tabular'
-#迄今位置最好的自动VIM自动补全插件了吧
-#Vundle的这个写法，是直接取该插件在Github上的repo
-Bundle 'Valloric/YouCompleteMe'
+"迄今位置最好的自动VIM自动补全插件了吧
+"Vundle的这个写法，是直接取该插件在Github上的repo
+""Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on     " required!
 "
@@ -79,3 +84,24 @@ filetype plugin indent on     " required!
 
 " make nerd tree always show at right
 let g:NERDTreeWinPos = "right"
+
+
+" use theme
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
+
+
+
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
+map <A-,>  <C-I>
+map <A-.>  <C-O>
+
+imap {} {<CR>}<Up><End><CR> 
+
+
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+

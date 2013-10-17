@@ -1,0 +1,36 @@
+[submodule "FuzzyFinder"]
+	path = FuzzyFinder
+	url = ./bundle/FuzzyFinder/
+[submodule "L9"]
+	path = L9
+	url = ./bundle/L9/
+[submodule "ShowTrailingWhitespace"]
+	path = ShowTrailingWhitespace
+	url = ./bundle/ShowTrailingWhitespace/
+[submodule "SrcExpl"]
+	path = SrcExpl
+	url = ./bundle/SrcExpl/
+[submodule "The-NERD-Commenter"]
+	path = The-NERD-Commenter
+	url = ./bundle/The-NERD-Commenter/
+[submodule "The-NERD-tree"]
+	path = The-NERD-tree
+	url = ./bundle/The-NERD-tree/
+[submodule "YouCompleteMe"]
+	path = YouCompleteMe
+	url = ./bundle/YouCompleteMe/
+[submodule "command-t"]
+	path = command-t
+	url = ./bundle/command-t/
+[submodule "ctrlp.vim"]
+	path = ctrlp.vim
+	url = ./bundle/ctrlp.vim/
+[submodule "matchit.zip"]
+	path = matchit.zip
+	url = ./bundle/matchit.zip/
+[submodule "proj.vim"]
+	path = proj.vim
+	url = ./bundle/proj.vim/
+[submodule "taglist.vim"]
+	path = taglist.vim
+	url = ./bundle/taglist.vim/
